@@ -6,11 +6,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @Entity
 public class MainEntity {
-    @GeneratedValue@Id
+    @Id
+    @GeneratedValue
     private Long id;
     private String name;
     @OneToMany
